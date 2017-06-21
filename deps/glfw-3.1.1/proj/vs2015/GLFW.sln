@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glfw", "src\glfw.vcxproj", "{A27A87F3-78FC-46F6-A5E7-352F1E18681C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GLFW3", "GLFW3", "{F6FC2D8A-F156-4B57-BD89-42900523256E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		Release|Win32 = Release|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.Debug|Win32.Build.0 = Debug|Win32
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.Release|Win32.ActiveCfg = Release|x64
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.Release|Win32.Build.0 = Release|x64
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A27A87F3-78FC-46F6-A5E7-352F1E18681C} = {F6FC2D8A-F156-4B57-BD89-42900523256E}
+	EndGlobalSection
+EndGlobal

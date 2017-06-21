@@ -1,0 +1,70 @@
+﻿  Emitter.cpp
+d:\sourcetreerepositories\lowlevel2\source\emitter.cpp(134): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(54): warning C4244: 'argument': conversion from 'int' to 'const glm::u8', possible loss of data
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(52): note: while compiling class template member function 'glm::tvec1<glm::u8,0> glm::detail::compute_rand<glm::detail::uint8,0,vecType>::call(void)'
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(99): note: see reference to function template instantiation 'glm::tvec1<glm::u8,0> glm::detail::compute_rand<glm::detail::uint8,0,vecType>::call(void)' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(100): note: see reference to class template instantiation 'glm::detail::compute_rand<glm::detail::uint8,0,vecType>' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(98): note: while compiling class template member function 'glm::tvec1<glm::u16,0> glm::detail::compute_rand<glm::detail::uint16,0,vecType>::call(void)'
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(110): note: see reference to function template instantiation 'glm::tvec1<glm::u16,0> glm::detail::compute_rand<glm::detail::uint16,0,vecType>::call(void)' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(111): note: see reference to class template instantiation 'glm::detail::compute_rand<glm::detail::uint16,0,vecType>' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(109): note: while compiling class template member function 'glm::tvec1<glm::uint,0> glm::detail::compute_rand<glm::detail::uint32,0,vecType>::call(void)'
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(228): note: see reference to function template instantiation 'glm::tvec1<glm::uint,0> glm::detail::compute_rand<glm::detail::uint32,0,vecType>::call(void)' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(228): note: see reference to class template instantiation 'glm::detail::compute_rand<glm::detail::uint32,0,vecType>' being compiled
+          with
+          [
+              vecType=glm::tvec1
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(227): note: while compiling class template member function 'glm::tvec1<float,0> glm::detail::compute_linearRand<genType,0,glm::tvec1>::call(const glm::tvec1<float,0> &,const glm::tvec1<float,0> &)'
+          with
+          [
+              genType=float
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(290): note: see reference to function template instantiation 'glm::tvec1<float,0> glm::detail::compute_linearRand<genType,0,glm::tvec1>::call(const glm::tvec1<float,0> &,const glm::tvec1<float,0> &)' being compiled
+          with
+          [
+              genType=float
+          ]
+  d:\sourcetreerepositories\lowlevel2\deps\glm\glm\gtc\random.inl(290): note: see reference to class template instantiation 'glm::detail::compute_linearRand<genType,0,glm::tvec1>' being compiled
+          with
+          [
+              genType=float
+          ]
+  d:\sourcetreerepositories\lowlevel2\source\emitter.cpp(61): note: see reference to function template instantiation 'genType glm::linearRand<float>(genType,genType)' being compiled
+          with
+          [
+              genType=float
+          ]
+d:\sourcetreerepositories\lowlevel2\source\emitter.cpp(91): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+  RenderingContext.vcxproj -> D:\SourceTreeRepositories\lowlevel2\proj\vs2015\../../lib\RenderingContext.lib

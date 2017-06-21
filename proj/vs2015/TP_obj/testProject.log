@@ -1,0 +1,15 @@
+﻿RenderingContext.lib(glew.obj) : warning LNK4099: PDB 'glew_static.pdb' was not found with 'RenderingContext.lib(glew.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glew_static.pdb'; linking object as if no debug info
+RenderingContext.lib(wgl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(wgl_context.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(winmm_joystick.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(winmm_joystick.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(win32_window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(win32_window.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(win32_tls.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(win32_tls.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(win32_time.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(win32_time.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(win32_monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(win32_monitor.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(win32_init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(win32_init.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(window.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(monitor.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(monitor.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(input.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(init.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+RenderingContext.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'RenderingContext.lib(context.obj)' or at 'D:\SourceTreeRepositories\lowlevel2\bin\glfw.pdb'; linking object as if no debug info
+  testProject.vcxproj -> D:\SourceTreeRepositories\lowlevel2\proj\vs2015\../../bin\testProject.exe
+  testProject.vcxproj -> D:\SourceTreeRepositories\lowlevel2\proj\vs2015\../../bin\testProject.pdb (Partial PDB)
