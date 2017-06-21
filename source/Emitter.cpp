@@ -80,10 +80,6 @@ void Emitter::Update(float a_deltaTime, glm::mat4& a_camera)
 	}
 
 
-
-
-
-
 	//actually utilising the benefits of simd here
 	//update each particles position and life
 	for (int i = 0; i < m_maxSimDParticles; i++)
@@ -103,38 +99,8 @@ void Emitter::Update(float a_deltaTime, glm::mat4& a_camera)
 
 
 
-	//============================================================================================================================================================================================
-	//So here is where ideally i wanted to implement multithreading, because drawing all the billboards is the most cpu intensive thing in the update cycle (if we do everything but draw billboards) 
-	//our fps was a solid 60, however i have been unable to successfully implement multithreading correctly as i get errors where each thread is trying to read/access the same data
-	//i tried mutex to prevent this however i was unsuccesfull
-	//
-	//So below is the two ways i can do this currently
-	// 1 : as a massive loop going through each particle in array
-	// 2 : use multithreading however we have to make sure each thread finishes before the next begins (if i find a way to fix error can use this again)
-	//============================================================================================================================================================================================
-
-
-
-	//============================================================
-	//without multithreading
-	//============================================================
-	//for (int i = 0; i < MAX_PARTICLES; i++) //for each particle (going through array values as we need to check each particle indivdually)
-	//{
-	//	//with this we are not going to draw the first frame of each particle as it was created in if statement above and now we in else but putting this in seperate loop, was kinda pointless
-	//	//and if we really wanted to we could put a draw in the if statement above, but drawing a bunch of particles in same starting point is kinda pointless, wont look different
-	//
-	//	glm::vec4 tempColour = glm::mix(m_endColour, m_startColour, particleStruct.arrayLifeLeft[i] / particleStruct.arrayLifeTotal[i]); //calculate colour based on life of particle
-	//	glm::vec3 tempPosition = glm::vec3(particleStruct.arrayX[i], particleStruct.arrayY[i], particleStruct.arrayZ[i]); //send new position of particle
-	//	Draw(tempPosition, tempColour, a_camera); //draw particle
-	//	
-	//}
-	//============================================================
-
-
 	int tmpMaxParticleForThread = MAX_PARTICLES * 0.25; //divide by 4 for 4 threads, so we can work out what chunk of particles to give to each thread
-	//============================================================
-	//with broken multithreading (one thread is completeting before doing next)
-	//============================================================
+
 	std::thread DrawT(&Emitter::DrawThread, this, 0, tmpMaxParticleForThread, a_camera);
 	DrawT.join();
 	std::thread DrawT2(&Emitter::DrawThread, this, tmpMaxParticleForThread, tmpMaxParticleForThread*2, a_camera);
@@ -144,17 +110,8 @@ void Emitter::Update(float a_deltaTime, glm::mat4& a_camera)
 	std::thread DrawT4(&Emitter::DrawThread, this, tmpMaxParticleForThread * 2 + tmpMaxParticleForThread, MAX_PARTICLES, a_camera);
 	DrawT4.join();
 	//============================================================
-	//use these joins and comment the ones above out if u want to see my issue
-	//DrawT.join();
-	//DrawT2.join();
-	//DrawT3.join();
-	//DrawT4.join();
 
-
-
-
-
-	std::cout << " FPS: " << 1/a_deltaTime << std::endl; //fps counter
+	//std::cout << " FPS: " << 1/a_deltaTime << std::endl; //fps counter
 
 }
 
